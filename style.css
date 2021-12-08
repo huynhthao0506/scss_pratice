@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;500&family=Open+Sans:wght@300&display=swap");
+:root {
+  --color-white:#fff;
+  --color-light-grey:#cfcfcf;
+  --color-bg:#ecf2f8;
+  --color-violet:#7541c8;
+  --color-dark-grey:#19212e;
+  --color-grey:#48556a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--color-bg);
+  line-height: 1.5;
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+.container {
+  padding: 0 10%;
+  width: 85%;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.45em;
+  padding: 2% 0;
+}
+
+.grid-container__item--darkgrey, .grid-container__item--white_short, .grid-container__item--white_long, .grid-container__item--grey, .grid-container__item--violet {
+  border-radius: 0.3rem;
+  padding: 5%;
+}
+
+.grid-container .avatar-img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 3%;
+}
+
+.grid-container .avatar {
+  display: flex;
+  align-items: center;
+  font-size: 0.5em;
+  color: var(--color-white);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+}
+.grid-container__item {
+  padding: 1.25rem;
+  font-size: 0.7em;
+}
+.grid-container .avatar-name__name {
+  padding-bottom: 0.1rem;
+}
+.grid-container .text-heading {
+  color: var(--color-white);
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+.grid-container .text-detail {
+  font-size: 0.7em;
+  color: var(--color-light-grey);
+}
+.grid-container__item--violet {
+  background-color: var(--color-violet);
+  grid-column: 1/3;
+  grid-row: span 1;
+}
+.grid-container__item--grey {
+  background-color: var(--color-grey);
+  grid-column: 3/span 1;
+  grid-row: span 1;
+}
+.grid-container__item--white_long {
+  background-color: var(--color-white);
+  grid-column: 4/span 1;
+  grid-row: 1/span 2;
+}
+.grid-container__item--white_long .avatar-name, .grid-container__item--white_long .text-heading {
+  color: #000;
+}
+.grid-container__item--white_long .text-detail {
+  color: var(--color-grey);
+}
+.grid-container__item--white_short {
+  background-color: var(--color-white);
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.grid-container__item--white_short .avatar-name, .grid-container__item--white_short .text-heading {
+  color: #000;
+}
+.grid-container__item--white_short .text-detail {
+  color: var(--color-grey);
+}
+.grid-container__item--darkgrey {
+  background-color: var(--color-dark-grey);
+  grid-column: 2/span 2;
+  grid-row: span 1;
+}
+
+.challenger {
+  margin: 1.875rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
